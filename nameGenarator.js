@@ -1,7 +1,6 @@
 
 var names = [];
 
-
 function setNames() {
     const nameInput = document.getElementById('nameInput').value.trim();
 
@@ -21,8 +20,8 @@ function generateRandomName() {
     const rendomName = names[rendomIndex];
 
     displayName.textContent = rendomName;
-    
-    if(names == ''){
+
+    if (names == '') {
         displayName.style.display = 'none';
         alert("Please add your name.");
     }
