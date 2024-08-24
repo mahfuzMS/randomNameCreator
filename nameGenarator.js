@@ -21,4 +21,9 @@ function generateRandomName() {
     const rendomName = names[rendomIndex];
 
     displayName.textContent = rendomName;
+    
+    if(names == ''){
+        displayName.style.display = 'none';
+        alert("Please add your name.");
+    }
 }
