@@ -64,13 +64,52 @@ body {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 410px) {
     #input-section{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 30px;
         /* margin-left: 0; */
+        padding: 25px;
+        margin: 0;
+
+    }
+
+    #nameInput{
+        padding: 12px 2px;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+    }
+
+    #input-button {
+        border-radius: 20px;
+        padding: 9px 12x;
+        font-size: 16px;
+    }
+
+    #generated-name {
+        border: none;
+        display: none;
+        padding: 15px;
+        margin: 30px 22px;
+        border-radius: 20px;
+        /* background-color: #b9ae65; */
+        width: 80%;
+        /* margin-left: 26rem; */
+    }
+
+}
+
+/* 
+@media screen and (max-width: 768px) {
+    #input-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        
         padding: 25px;
         margin: 0;
 
@@ -95,13 +134,7 @@ body {
         padding: 15px;
         margin: 30px 22px;
         border-radius: 20px;
-        /* background-color: #b9ae65; */
         width: 80%;
-        /* margin-left: 26rem; */
+
     }
-
-}
-
-@media screen and (min-width: 768px) {
-    
-}
+} */
