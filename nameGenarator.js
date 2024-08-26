@@ -23,14 +23,22 @@ function setNames() {
 
 function generateRandomName() {
     var displayName = document.getElementById("generated-name");
-    displayName.style.display = 'block';
-    const rendomIndex = Math.floor(Math.random() * names.length);
-    const rendomName = names[rendomIndex];
+    if(names.length >= 1){
+        displayName.style.display = 'block';
 
-    displayName.textContent = rendomName;
-
-    if (names == '') {
+    }
+    else  {
         displayName.style.display = 'none';
         alert("Please add your name.");
     }
+    const rendomIndex = Math.floor(Math.random() * names.length);
+    let rendomName = names[rendomIndex];
+    displayName.textContent = rendomName;
+    names.splice(rendomIndex, 1);
+
+    if (names.length < 1) {
+        displayName.textContent = rendomName;
+    }
+   
+
 }
